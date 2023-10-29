@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     public AudioSource spawnSource;
     public AudioClip spawnClip;
     GameObject instance;
+    int currentSpawn = 0;
 
     IEnumerator Start ()
     {
@@ -28,14 +29,20 @@ public class Spawner : MonoBehaviour
         while(isWorking)
         {
             yield return new WaitForSeconds (spawnTime);
-            instance = Instantiate(destroyables[Random.Range (0, destroyables.Length)], spawnPoints[0]);
-            instance.GetComponentInChildren<Destroyable>().speed = Random.Range (minObjectSpeed, maxObjectSpeed);
+            
+            if(currentSpawn != destroyables.Length)
+            {
+                instance = Instantiate(destroyables[currentSpawn], spawnPoints[0]);
+                instance.GetComponentInChildren<Destroyable>().speed = Random.Range (minObjectSpeed, maxObjectSpeed);
 
-            if (!spawnSource.isPlaying) 
-            { 
-                spawnSource.clip = spawnClip;
-                spawnSource.Play(); 
-            } 
+                if (!spawnSource.isPlaying) 
+                { 
+                    spawnSource.clip = spawnClip;
+                    spawnSource.Play(); 
+                } 
+
+                currentSpawn++;
+            }            
         }
     }
 }

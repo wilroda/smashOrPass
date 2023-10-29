@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1602,7 +1602,25 @@ MonoBehaviour:
   - {fileID: 980535390}
   destroyables:
   - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
-  - {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
   spawnTime: 3
   minObjectSpeed: 4
   maxObjectSpeed: 6
@@ -2498,9 +2516,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneWaitTime: 5
   timeText: {fileID: 1308722358}
-  levelTime: 40
+  levelTime: 20
   objectiveText: {fileID: 623160409}
-  pompkinsToSquash: 5
+  pompkinsToSquash: 3
   spawner: {fileID: 980535391}
   scoreBoardWin: {fileID: 990777505}
   scoreBoardLoose: {fileID: 1776203633}
