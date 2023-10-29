@@ -462,7 +462,7 @@ MonoBehaviour:
   lives: 1
   pressSpeed: 10
   pressAvailable: 1
-  pressCoolDownTime: 2
+  pressCoolDownTime: 1.3
   coolDownCount: 0
   loadingImage: {fileID: 258316206}
   loadingText: {fileID: 2018716885}
@@ -2088,9 +2088,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneWaitTime: 5
   timeText: {fileID: 1308722358}
-  levelTime: 20
+  levelTime: 43
   objectiveText: {fileID: 623160409}
-  pompkinsToSquash: 3
+  pompkinsToSquash: 15
   spawner: {fileID: 980535391}
   scoreBoardWin: {fileID: 990777505}
   scoreBoardLoose: {fileID: 1776203633}
@@ -2588,6 +2588,142 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: spawnTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: maxObjectSpeed
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: minObjectSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.size
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[0]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[1]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[2]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[3]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[4]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[5]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[6]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[7]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[8]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[9]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[10]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[11]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[12]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[13]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[14]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[15]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[16]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[17]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[18]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[19]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[20]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[21]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[22]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[23]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[24]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[25]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[26]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[27]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[28]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+      propertyPath: destroyables.Array.data[29]
+      value: 
+      objectReference: {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
     - target: {fileID: 3971812799145420556, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
       propertyPath: m_RootOrder
       value: 5
