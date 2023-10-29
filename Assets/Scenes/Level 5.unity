@@ -2088,9 +2088,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneWaitTime: 5
   timeText: {fileID: 1308722358}
-  levelTime: 35
+  levelTime: 20
   objectiveText: {fileID: 623160409}
-  pompkinsToSquash: 5
+  pompkinsToSquash: 3
   spawner: {fileID: 980535391}
   scoreBoardWin: {fileID: 990777505}
   scoreBoardLoose: {fileID: 1776203633}
@@ -2588,54 +2588,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: minObjectSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[1]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[3]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[5]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[7]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[9]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[10]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[12]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[14]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[16]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[18]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
-    - target: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
-      propertyPath: destroyables.Array.data[19]
-      value: 
-      objectReference: {fileID: 7649551948216535795, guid: 940f45c0a821b4c4187e257364f2d7ff, type: 3}
     - target: {fileID: 3971812799145420556, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
       propertyPath: m_RootOrder
       value: 5
