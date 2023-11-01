@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17836584, g: 0.22333223, b: 0.30535552, a: 1}
+  m_IndirectSpecularColor: {r: 0.17836562, g: 0.22333175, b: 0.30535498, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -458,16 +458,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c79a173733970a4fb14da748edb1128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 2111649257}
-  lives: 1
-  pressSpeed: 10
   pressAvailable: 1
-  pressCoolDownTime: 2
-  coolDownCount: 0
+  pompkinSquashed: 0
+  particles: {fileID: 2111649257}
   loadingImage: {fileID: 258316206}
   loadingText: {fileID: 2018716885}
   shake: {fileID: 2114783861}
-  pompkinSquashed: 0
   scream:
   - {fileID: 8300000, guid: 328063d236f270d4495ea9f23ab4de15, type: 3}
   - {fileID: 8300000, guid: e1627a3210ae6894698e3c39e8c11862, type: 3}
@@ -1324,17 +1320,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &980535391 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3971812798720328152, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
+--- !u!4 &980535392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3971812798720328153, guid: dd29aad8b4207104aacff99a2cb672c0, type: 3}
   m_PrefabInstance: {fileID: 3971812798557751687}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 685e55a464f679d4185e1402b066c39a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &990777505 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 130957632255007411, guid: 4e89715e91f475c419373feb7063be56, type: 3}
@@ -2086,12 +2076,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eed7cca12d335e4891ea867c142d2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneWaitTime: 5
-  timeText: {fileID: 1308722358}
-  levelTime: 20
-  objectiveText: {fileID: 623160409}
+  time: 25
   pompkinsToSquash: 3
-  spawner: {fileID: 980535391}
+  transitionTime: 5
+  healthPoints: 1
+  animationSpeed: 5
+  coolDownTime: 2
+  minSpawnTime: 3
+  maxSpawnTime: 3
+  minObjectSpeed: 3
+  maxObjectSpeed: 4
+  spawnPoints:
+  - {fileID: 980535392}
+  objects:
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  - {fileID: 7649551948216535795, guid: b0c96a1f14125f64fa75b6edc52f47c2, type: 3}
+  gameEnd: 0
+  timeText: {fileID: 1308722358}
+  objectiveText: {fileID: 623160409}
   scoreBoardWin: {fileID: 990777505}
   scoreBoardLoose: {fileID: 1776203633}
 --- !u!4 &1637868042

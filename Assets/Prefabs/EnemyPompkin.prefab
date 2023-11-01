@@ -141,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7649551948216535796}
   m_Layer: 0
-  m_Name: EnemyTemplate
+  m_Name: EnemyPompkin
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 5489519166929205101}
   - component: {fileID: 2206830995959388660}
   - component: {fileID: 29489122640393036}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4986,6 +4986,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b23214486316f6d49bf3b77a0c185a72, type: 2}
+    - target: {fileID: 4694484290015975438, guid: b4433fe4765012f428222085354f398a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5613527233993509625, guid: b4433fe4765012f428222085354f398a, type: 3}
       propertyPath: _possibleFaces.Array.size
       value: 2
@@ -5114,6 +5118,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 2100000, guid: 225aa4fef70adb241aa12ff315e4da5a, type: 2}
+    - target: {fileID: 5613527234257733492, guid: b4433fe4765012f428222085354f398a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5613527235649098387, guid: b4433fe4765012f428222085354f398a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5161,6 +5169,10 @@ PrefabInstance:
     - target: {fileID: 5613527235649098388, guid: b4433fe4765012f428222085354f398a, type: 3}
       propertyPath: m_Name
       value: Pompkim Visual
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613527235649098388, guid: b4433fe4765012f428222085354f398a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4433fe4765012f428222085354f398a, type: 3}

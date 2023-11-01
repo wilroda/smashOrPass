@@ -9,23 +9,25 @@ using UnityEngine.SceneManagement;
 
 public class PressController : MonoBehaviour
 {
-    public SquishPompkin particles;
     public static PressController instance;
-    public int lives = 3;
-    public float pressSpeed = 5f;
-    public bool pressAvailable = true;
-    public float pressCoolDownTime = 2f;
-    public float coolDownCount = 0f;
-    private bool pressed = false;
-
-    public Image loadingImage;
-    public TMP_Text loadingText;
-
-    public Shake shake;
-    public int pompkinSquashed = 0;
     Animator anim;
     bool gameStart = true;
     bool pressReady = true;
+    private bool pressed = false;
+    float pressSpeed = 10f;
+    float pressCoolDownTime = 2f;
+    float coolDownCount = 0f;
+    public bool pressAvailable = true;
+    
+    [HideInInspector]
+    public int pompkinSquashed = 0;
+    public SquishPompkin particles;
+    public Image loadingImage;
+    public TMP_Text loadingText;
+    public Shake shake;
+    
+    
+    
 
     public AudioClip[] scream;
     public AudioSource screamSource;
@@ -55,13 +57,15 @@ public class PressController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {        
-        anim = GetComponentInParent<Animator>();   
+        anim = GetComponentInParent<Animator>();
+
+        pressSpeed = LevelSetup.instance.animationSpeed;  
+        pressCoolDownTime = LevelSetup.instance.coolDownTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         // Press gauge starts green and with OK sign!
         if(gameStart)
         {
@@ -101,10 +105,6 @@ public class PressController : MonoBehaviour
             pressReady = true;
         }
 
-        
-
-
-        // pressSource.Pause();
         if(Input.GetButton("Fire1") && pressReady) {
             PressAudioClip();
             Usability();   
@@ -156,7 +156,7 @@ public class PressController : MonoBehaviour
     {
         if(other.gameObject.layer == 7)
         {
-            lives -= 1;
+            LevelSetup.instance.healthPoints -= 1;
         }
     }
 

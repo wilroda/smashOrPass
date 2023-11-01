@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 134de100220e2ec489850ebc86eca0ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnemy: 0
   speed: 5
 --- !u!1 &7649551948216535795
 GameObject:
@@ -130,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7649551948216535796}
   m_Layer: 0
-  m_Name: PompkinTemplate
+  m_Name: GoodPompkin
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

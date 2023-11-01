@@ -4,36 +4,50 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public Transform[] spawnPoints;
-    public GameObject[] destroyables;
-    public float spawnTime = 2f;
-    public float minObjectSpeed = 5f;
-    public float maxObjectSpeed = 5f;
-    public bool isWorking = true;
+    Transform[] spawnPoints;
+    GameObject[] objects;
+    float minSpawnTime = 2f;
+    float maxSpawnTime = 4f;
+    float minObjectSpeed = 5f;
+    float maxObjectSpeed = 5f;
+    bool isWorking = true;
+    int currentSpawnCount = 0;
+    GameObject instance;
     public AudioSource spawnSource;
     public AudioClip spawnClip;
-    GameObject instance;
-    int currentSpawn = 0;
 
-    IEnumerator Start ()
-    {
-        yield return StartCoroutine(Spawn());
-    }
 
     void Update () {
 
+        if(LevelSetup.instance.gameEnd == true)
+        {
+            isWorking = false;
+        }
+
+    }
+
+    IEnumerator Start ()
+    {
+        minSpawnTime = LevelSetup.instance.minSpawnTime;
+        maxSpawnTime = LevelSetup.instance.maxSpawnTime;
+        minObjectSpeed = LevelSetup.instance.minObjectSpeed;
+        maxObjectSpeed = LevelSetup.instance.maxObjectSpeed;
+        spawnPoints = LevelSetup.instance.spawnPoints;
+        objects = LevelSetup.instance.objects;
+
+        yield return StartCoroutine(Spawn());
     }
    
     IEnumerator Spawn ()
     {
         while(isWorking)
         {
-            yield return new WaitForSeconds (spawnTime);
+            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
             
-            if(currentSpawn != destroyables.Length)
+            if(currentSpawnCount != objects.Length)
             {
-                instance = Instantiate(destroyables[currentSpawn], spawnPoints[0]);
-                instance.GetComponentInChildren<Destroyable>().speed = Random.Range (minObjectSpeed, maxObjectSpeed);
+                instance = Instantiate(objects[currentSpawnCount], spawnPoints[0]);
+                instance.GetComponentInChildren<Destroyable>().speed = Random.Range(minObjectSpeed, maxObjectSpeed);
 
                 if (!spawnSource.isPlaying) 
                 { 
@@ -41,7 +55,7 @@ public class Spawner : MonoBehaviour
                     spawnSource.Play(); 
                 } 
 
-                currentSpawn++;
+                currentSpawnCount++;
             }            
         }
     }
