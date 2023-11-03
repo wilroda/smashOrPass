@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Destroyable : MonoBehaviour
 {
     public bool isEnemy = false;
+    public bool isStart = false;
     public float speed;
     Rigidbody rb;
 
@@ -44,6 +46,10 @@ public class Destroyable : MonoBehaviour
                 PressController.instance.PompkinSmash();
                 PressController.instance.pompkinSquashed +=1;
                 Object.Destroy(transform.parent.gameObject);
+                if(isStart)
+                {
+                    LevelSetupMenu.instance.smashed = true;
+                }
             } else if(other.gameObject.layer == 8)
             {
                 Object.Destroy(transform.parent.gameObject);

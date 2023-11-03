@@ -5,25 +5,45 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject creditsPanel;
+    public Animator anim;
+    public GameObject title;
+    public GameObject backButton;
+    public GameObject backButtonClick;
 
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        PressController.instance.pressAvailable = true;
+
     }
 
     public void Credits()
     {
-        creditsPanel.SetActive(true);
+        anim.SetTrigger("Credits");
+        StartCoroutine(WaitForCreditsDown());
+        title.SetActive(false);
     }
 
     public void BackCredits()
     {
-        creditsPanel.SetActive(false);
+        anim.SetTrigger("CreditsUp");
+        StartCoroutine(WaitForCreditsUp());
+        backButton.SetActive(false);
+        backButtonClick.SetActive(false);
     }
 
     public void Exit()
     {
         Application.Quit();
+    }
+
+    private IEnumerator WaitForCreditsUp() {
+        yield return new WaitForSeconds(.5f);
+        title.SetActive(true);
+    }
+
+    private IEnumerator WaitForCreditsDown() {
+        yield return new WaitForSeconds(.2f);
+        backButton.SetActive(true);
+        backButtonClick.SetActive(true);
     }
 }

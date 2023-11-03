@@ -59,8 +59,16 @@ public class PressController : MonoBehaviour
     {        
         anim = GetComponentInParent<Animator>();
 
-        pressSpeed = LevelSetup.instance.animationSpeed;  
-        pressCoolDownTime = LevelSetup.instance.coolDownTime;
+        if(LevelSetup.instance == null)
+        {
+            pressSpeed = 10;
+            pressCoolDownTime = 2.0f;
+        } else 
+        {
+            pressSpeed = LevelSetup.instance.animationSpeed;  
+            pressCoolDownTime = LevelSetup.instance.coolDownTime;
+        }
+        
     }
 
     // Update is called once per frame
@@ -127,6 +135,16 @@ public class PressController : MonoBehaviour
         }
 
 
+    }
+
+    public void SmashButtonHover()
+    {
+        pressAvailable = true;   
+    }
+
+    public void SmashButtonHoverExit()
+    {
+        pressAvailable = false;   
     }
 
     void Usability()
