@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: conveyorCarpet
-  m_Shader: {fileID: 4800000, guid: 447f5c418fbd61c42ad9dcba201c1697, type: 3}
+  m_Name: conveyorCarpetMenu
+  m_Shader: {fileID: 4800000, guid: c3536c1c650f6384fb87c59fbba8b6cc, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _NORMALMAP
@@ -84,7 +84,7 @@ Material:
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0.5
+    - _Speed: 0
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
