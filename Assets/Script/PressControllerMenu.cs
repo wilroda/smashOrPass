@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 
 
 
-public class PressController : MonoBehaviour
+public class PressControllerMenu : MonoBehaviour
 {
-    public static PressController instance;
+    public static PressControllerMenu instance;
     Animator anim;
     bool gameStart = true;
     bool pressReady = true;
@@ -37,6 +37,8 @@ public class PressController : MonoBehaviour
     public AudioSource pressSource;
     public AudioSource pressDingSource;
     public AudioSource levelSource;
+    public AudioSource screenUpSource;
+    public AudioClip screenUpClip;
     public AudioClip levelWinClip;
     public AudioClip levelLostClip;
     AudioClip screamClip;
@@ -120,7 +122,7 @@ public class PressController : MonoBehaviour
             }
         } else 
         {
-            anim.ResetTrigger("Pressing");
+            // anim.ResetTrigger("Pressing");
         }
 
         if(pressed)
@@ -148,10 +150,6 @@ public class PressController : MonoBehaviour
 
     void Usability()
     {
-        if(pressAvailable == false)
-        {
-            return;
-        }
         shake.start = true;
         coolDownCount = 0f; 
         anim.speed = pressSpeed;
@@ -211,6 +209,25 @@ public class PressController : MonoBehaviour
             pressSource.clip = pressClip;
             pressSource.Play(); 
         } 
+    }
+
+    public void ScreenUp() 
+    { 
+        if (!screenUpSource.isPlaying) 
+        { 
+            screenUpSource.clip = screenUpClip;
+            screenUpSource.Play(); 
+        } 
+    }
+
+    public void Press()
+    {
+        pressAvailable = true;
+        PressAudioClip();
+        Usability();   
+        pressed = true;
+        pressReady = false;
+        gameStart = false;
     }
 
     public void PressDingAudioClip() 

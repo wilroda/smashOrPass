@@ -24,6 +24,19 @@ public class Destroyable : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+        if(isStart)
+        {
+            if(other.gameObject.layer == 6)
+            {
+                PressControllerMenu.instance.ParticlePlay(GetComponentInChildren<PumpkinVisualRandomizer>());
+                PressControllerMenu.instance.PompkinScream();
+                PressControllerMenu.instance.PompkinSmash();
+                Object.Destroy(transform.parent.gameObject);
+            }
+
+            return;
+        }
+
         if(isEnemy)
         {
             if(other.gameObject.layer == 6)
@@ -46,10 +59,6 @@ public class Destroyable : MonoBehaviour
                 PressController.instance.PompkinSmash();
                 PressController.instance.pompkinSquashed +=1;
                 Object.Destroy(transform.parent.gameObject);
-                if(isStart)
-                {
-                    LevelSetupMenu.instance.smashed = true;
-                }
             } else if(other.gameObject.layer == 8)
             {
                 Object.Destroy(transform.parent.gameObject);

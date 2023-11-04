@@ -9,7 +9,7 @@ public class LevelSetupMenu : MonoBehaviour
     public static LevelSetupMenu instance;
 
     [Header ("Level Transition Time")]
-    public float transitionTime = 2f;
+    public float transitionTime;
 
     [Header ("Debug")]
     public bool smashed = false;
@@ -26,7 +26,7 @@ public class LevelSetupMenu : MonoBehaviour
         // Level Lost - Press Damaged or Time = 0 & Level Win - Pompkin Squash Objective Met
         if(smashed)
         {
-            Smash();
+            //Smash();
         }
 
     }
