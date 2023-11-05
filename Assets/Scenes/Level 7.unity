@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eed7cca12d335e4891ea867c142d2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 40
+  time: 43
   pompkinsToSquash: 200
   transitionTime: 5
   healthPoints: 1
